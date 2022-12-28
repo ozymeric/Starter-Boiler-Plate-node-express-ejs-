@@ -1,33 +1,38 @@
 // #########################################################
 // #########################################################
 // #########################################################
-const express = require("express");
-const app = express();
 
-const fs = require("fs");
 const path = require("path");
+const fs = require("fs");
 
-const defaultRoutes = require("./routes/default");
-
-// #########################################################
-// #########################################################
-// #########################################################
-
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
-
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static("public"));
-
-app.use("/", defaultRoutes);
+const jsonFile = path.join(__dirname, "..", "data", "data.json");
 
 // #########################################################
 // #########################################################
 // #########################################################
 
-app.listen(3000, function () {
-  console.log("Server is up and running on port: 3000");
-});
+function fetchFileData() {
+  const rawData = fs.readFileSync(jsonFile);
+  const jsonifiedData = JSON.parse(rawData);
+  return jsonifiedData;
+}
+
+// #########################################################
+// #########################################################
+// #########################################################
+
+function storeUsers(updatedContent) {
+  fs.writeFileSync(jsonFile, JSON.stringify(updatedContent));
+}
+
+// #########################################################
+// #########################################################
+// #########################################################
+
+module.exports = {
+  fetchFileData: fetchFileData,
+  storeUsers: storeUsers,
+};
 
 // #########################################################
 // #########################################################
