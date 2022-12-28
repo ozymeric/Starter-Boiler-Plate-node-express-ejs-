@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
     <title>Document</title>
-    <script src="scripts/index.js"></script>
   </head>
   <body>
-    <a href="/filedata">filedata</a>
-    <h1>Hello World !</h1>
-    <br />
-    <%- include("includes/lorem") %>
+    <p>
+    <% for (let data of file) { %>
+      <p> <%= data.name %> </p>
+      <p> <%= data.surname %> </p>
+      <p> <%= data.email %> </p>
+      <p> <%= data.birthdate %> </p>
+      <p> <%= data.language %> </p>
+      <p> <%= data.id %> </p>
+    <% } %>
+    </p>
   </body>
 </html>

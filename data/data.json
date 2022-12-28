@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "name": "ozan",
+    "surname": "meric",
+    "email": "ozymeric@gmail.com",
+    "birthdate": "1985-11-02",
+    "language": "german",
+    "id": "f36d7d37-24ab-4aa1-b224-d39ea68aaf23"
+  }
+]
