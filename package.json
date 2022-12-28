@@ -1,0 +1,33 @@
+{
+  "name": "trial4",
+  "version": "1.0.0",
+  "description": "full node express ejs project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozymeric/node-express-ejs-trial-04.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "ejs",
+    "project"
+  ],
+  "author": "ozymeric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozymeric/node-express-ejs-trial-04/issues"
+  },
+  "homepage": "https://github.com/ozymeric/node-express-ejs-trial-04#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
