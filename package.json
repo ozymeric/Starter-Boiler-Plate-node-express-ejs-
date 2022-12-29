@@ -1,7 +1,7 @@
 {
-  "name": "trial4",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "full node express ejs project",
+  "description": "boilerplate",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
@@ -11,10 +11,7 @@
     "url": "git+https://github.com/ozymeric/node-express-ejs-trial-04.git"
   },
   "keywords": [
-    "express",
-    "node",
-    "ejs",
-    "project"
+    "boilerplate"
   ],
   "author": "ozymeric",
   "license": "ISC",
